@@ -6,18 +6,18 @@ Unzip it somewhere on your computer.
 2. Install a toolchain
 You need Node.js 18+ and a package manager. The repo is set up for pnpm (see .mise.toml), but npm works too.
 
-Node: https://nodejs.org (LTS)
+**Node: https://nodejs.org (LTS)
 pnpm (optional): npm install -g pnpm
-3. Install dependencies & run
+3. Install dependencies & run**
 From the unzipped project folder (this step needs internet — one time only):
 
-pnpm install        # or: npm install
-pnpm dev            # or: npm run dev
+**pnpm install        # or: npm install
+pnpm dev            # or: npm run dev**
 Then open the URL it prints (typically http://localhost:5173). That's the live dev server with hot reload.
 
 4. Build a production version (optional)
-pnpm build          # or: npm run build   -> outputs to dist/
-pnpm preview        # or: npm run preview -> serves the built app
+**pnpm build          # or: npm run build   -> outputs to dist/
+pnpm preview        # or: npm run preview -> serves the built app**
 The dist/ folder is a fully static site — you can host it anywhere (Netlify, GitHub Pages, an S3 bucket, or just open it through any static file server).
 
 Offline note
