@@ -1,0 +1,10 @@
+{
+  "description": "Streamline threat modeling by inputting system details to generate customized data flow diagrams, identify threats, and provide actionable security tips.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

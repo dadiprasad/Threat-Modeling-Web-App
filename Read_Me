@@ -1,0 +1,24 @@
+1. Download the code from Figma Make
+The project lives in Figma Make. To get the files, use the editor's export/download option (top of the Make interface — look for a "···" / Export / Download code action, or the Get code option). That gives you a ZIP of the full project — the same files we've been editing (src/, index.html, package.json, vite.config.ts, the self-hosted fonts in src/fonts/, etc.).
+
+Unzip it somewhere on your computer.
+
+2. Install a toolchain
+You need Node.js 18+ and a package manager. The repo is set up for pnpm (see .mise.toml), but npm works too.
+
+Node: https://nodejs.org (LTS)
+pnpm (optional): npm install -g pnpm
+3. Install dependencies & run
+From the unzipped project folder (this step needs internet — one time only):
+
+pnpm install        # or: npm install
+pnpm dev            # or: npm run dev
+Then open the URL it prints (typically http://localhost:5173). That's the live dev server with hot reload.
+
+4. Build a production version (optional)
+pnpm build          # or: npm run build   -> outputs to dist/
+pnpm preview        # or: npm run preview -> serves the built app
+The dist/ folder is a fully static site — you can host it anywhere (Netlify, GitHub Pages, an S3 bucket, or just open it through any static file server).
+
+Offline note
+After pnpm install completes once, everything runs with no internet — all threat-modeling logic is client-side and the three fonts are bundled locally (src/fonts/*.woff2), so there are zero runtime network calls.
