@@ -1,7 +1,3 @@
-1. Download the code from Figma Make
-The project lives in Figma Make. To get the files, use the editor's export/download option (top of the Make interface — look for a "···" / Export / Download code action, or the Get code option). That gives you a ZIP of the full project — the same files we've been editing (src/, index.html, package.json, vite.config.ts, the self-hosted fonts in src/fonts/, etc.).
-
-Unzip it somewhere on your computer.
 
 2. Install a toolchain
 You need Node.js 18+ and a package manager. The repo is set up for pnpm (see .mise.toml), but npm works too.
